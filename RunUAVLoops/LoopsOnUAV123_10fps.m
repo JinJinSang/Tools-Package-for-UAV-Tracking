@@ -1,4 +1,4 @@
- % Fangqiang Ding  2019/11/20
+ % DFQ  2019/11/20
 
  function LoopsOnUAV123_10fps(save_dir)                                        % 没有输入，则默认保存在当前文件下下的\all_trk_results\
 %%  读取视频序列和groundtruth
@@ -8,7 +8,7 @@ where_is_your_UAV123_database_folder = 'D:\BaiduNetdiskDownload\UAV123_10fps\dat
 %UAV123_10fps数据集共123个视频序列，总共37607帧，平均序列长度305.75帧
 tpye_of_assessment = 'UAV123_10fps';         
 addpath('.\UAV_Basic_Framework\');
-run_trackers_info = struct('AutoTrack',@run_AutoTrack);           %需要调参的tracker
+run_trackers_info = struct('ECO_HC',@run_ECO_HC);           %需要调参的tracker
 
 %% Read all video names using grouthtruth.txt
 type = tpye_of_assessment;

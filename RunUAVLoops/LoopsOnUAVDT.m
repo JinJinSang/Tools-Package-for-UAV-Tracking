@@ -1,4 +1,4 @@
- % Fangqiang Ding  2019/11/20
+ % DFQ  2019/11/20
 
  function LoopsOnUAVDT(save_dir)                                        % 没有输入，则默认保存在当前文件下下的\all_trk_results\
 %%  读取视频序列和groundtruth

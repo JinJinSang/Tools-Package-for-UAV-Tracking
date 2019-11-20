@@ -6,7 +6,7 @@ where_is_your_DTB70_database_folder = 'D:\BaiduNetdiskDownload\DTB70'; % °üº¬ËùÓ
 %DTB70Êı¾İ¼¯µÄÊÓÆµĞòÁĞºÍgroundtruthÊÇÔÚÒ»ÆğµÄ
 %DTB70¹²ÓĞ70¸öÊı¾İ¼¯£¬×Ü¹²15777Ö¡Í¼Ïñ£¬Æ½¾ùĞòÁĞ³¤¶È225.39Ö¡
 addpath('.\UAV_Basic_Framework\');
-run_trackers_info = struct('AutoTrack',@run_AutoTrack);           %ĞèÒªµ÷²ÎµÄtracker
+run_trackers_info = struct('ECO_HC',@run_ECO_HC);           %ĞèÒªµ÷²ÎµÄtracker
 
 %% Read all video names using grouthtruth.txt
 dir_output = dir(fullfile(where_is_your_DTB70_database_folder));             % »ñÈ¡¸ÃÎÄ¼ş¼ĞÏÂµÄËùÓĞµÄtxtÎÄ¼ş

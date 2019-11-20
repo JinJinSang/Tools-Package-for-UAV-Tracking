@@ -1,4 +1,4 @@
- % Fangqiang Ding 2019/11/20
+ % DFQ 2019/11/20
 
 function run_group_DTB70(save_dir)                                        % Ã»ÓĞÊäÈë£¬ÔòÄ¬ÈÏ±£´æÔÚµ±Ç°ÎÄ¼şÏÂÏÂµÄ\all_trk_results\
 %%  ¶ÁÈ¡ÊÓÆµĞòÁĞºÍgroundtruth
@@ -21,7 +21,7 @@ all_trackers_dir = '.\tracker_set\';                                   % °üº¬ËùÓ
 if nargin < 1
     save_dir = [main_folder '\group_results\DTB70\'];              % ±£´æÅÜÍêµÄ½á¹ûµ½Ö¸¶¨ÎÄ¼ş¼Ğ
 end
-run_trackers_info = struct('AutoTrack',@run_AutoTrack);                               % »ñÈ¡ÔËĞĞtrackerµÄº¯ÊıĞÅÏ¢£¬º¯Êı×îºÃÊÇrun_xxx(seq, res_path, bSaveImage))ÕâÖÖ
+run_trackers_info = struct('ECO_HC',@run_ECO_HC);                               % »ñÈ¡ÔËĞĞtrackerµÄº¯ÊıĞÅÏ¢£¬º¯Êı×îºÃÊÇrun_xxx(seq, res_path, bSaveImage))ÕâÖÖ
 tracker_name= fieldnames(run_trackers_info);                      % »ñÈ¡tracker_setµÄ³ÉÔ±Ãû
 tracker_name=tracker_name{1};
 cd(all_trackers_dir);                                                  % ½øÈë°üº¬ËùÓĞtrackerµÄÎÄ¼ş¼Ğ

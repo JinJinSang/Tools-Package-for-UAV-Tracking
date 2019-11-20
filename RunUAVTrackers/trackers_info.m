@@ -1,6 +1,5 @@
 function info = trackers_info()
 info = {
-    struct('AutoTrack',@run_AutoTrack)
     struct('ECO_HC',@run_ECO_HC)
 };
 %info结构体第一个字符串为tracker所在文件夹名称，亦为tracker的名称

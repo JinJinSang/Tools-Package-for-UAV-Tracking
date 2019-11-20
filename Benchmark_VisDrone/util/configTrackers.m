@@ -1,4 +1,4 @@
-% Fangqiang Ding 2019/11/20
+% DFQ 2019/11/20
 function trackers=configTrackers
         
     % configTrackers for loops
@@ -7,7 +7,7 @@ function trackers=configTrackers
     set2=[1 2 3 4] ;
     set3=[1 2 3 4];
     set4=[1 2 3 4];  
-    tracker_name='AutoTrack';
+    tracker_name='BACF';
     num_loops=length(set4)*length(set1)*length(set2)*length(set3);
     trackers_loop=cell(1,num_loops);
      for i=1:length(set1)
