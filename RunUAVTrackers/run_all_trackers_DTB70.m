@@ -23,8 +23,8 @@ if nargin < 1
 end
 run_trackers_info = trackers_info();                                   % 获取运行tracker的函数信息，函数最好是run_xxx(seq, res_path, bSaveImage))这种形式
 tracker_name_set=cell(length(run_trackers_info),1);
-for t=1:length(run_trackers_info)
-    tracker_name_set(t) = fieldnames(run_trackers_info{t});                      % 获取tracker_set的成员名
+for g=1:length(run_trackers_info)
+    tracker_name_set(g) = fieldnames(run_trackers_info{g});                      % 获取tracker_set的成员名
 end
 tracker_num = length(tracker_name_set);                                % 获取tracker_set里的总数
 cd(all_trackers_dir);                                                  % 进入包含所有tracker的文件夹
