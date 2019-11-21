@@ -53,7 +53,7 @@ for dataset_count =1:dataset_num
         param2=group(i,2);
         param3=group(i,3);
         param4=group(i,4);
-        save_res_dir = [save_dir, tracker_name,'-',name1,'-',num2str(param1),'-',name2,'-',num2str(param2),'-',name3,'-',num2str(param3),'-',name4,'-',num2str(param4),'\']; 
+        save_res_dir = [save_dir, tracker_name,num2str(param1),'_',num2str(param2),'_',num2str(param3),'_',num2str(param4),'\']; 
         if ~exist(save_res_dir, 'dir')
             mkdir(save_res_dir);
         end
@@ -68,7 +68,7 @@ for dataset_count =1:dataset_num
         results{1}.startFrame = seq.st_frame;
         fprintf('fps: %f\n', results{1}.fps);
         
-        save([save_res_dir, video_name, '_', tracker_name,'-',name1,'-',num2str(param1),'-',name2,'-',num2str(param2),'-',name3,'-',num2str(param3),'-',name4,'-',num2str(param4)]);
+        save([save_res_dir, video_name, '_', tracker_name,num2str(param1),'_',num2str(param2),'_',num2str(param3),'_',num2str(param4)]);
         % plot precision figure
 %         show_visualization =false;                                       % ÏÔÊ¾Í¼Æ¬£¨precision_plot£©½á¹û
 %         precision_plot_save(results{1}.res, seq.ground_truth, video_name, save_pic_dir, show_visualization);
